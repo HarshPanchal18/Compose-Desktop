@@ -16,8 +16,11 @@ repositories {
     maven { url = uri("https://maven.pkg.jetbrains.space/public/p/compose/dev") }
 }
 
+//val nav_version = "2.5.3"
 dependencies {
     implementation(compose.desktop.currentOs)
+    implementation(compose.materialIconsExtended)
+    //implementation("androidx.navigation:navigation-compose:$nav_version")
 }
 
 tasks.withType<KotlinCompile>() {
